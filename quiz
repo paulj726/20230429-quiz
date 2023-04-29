@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -404,14 +405,6 @@ font-size: 18px;
 </p>
       <button class="start-btn">Start the Quiz</button>
     </div>
-
-
-<div class="opt-in-form" style="display:none;">
-<h3>Want to be the first to hear about <strong><em>limited quantity products</em></strong> , <strong><em>new arrivals</em></strong> , and our <strong><em>best promotions</em></strong> ?</h3>
-<p>Join our email list and receive exclusive discounts and gift ideas for your loved ones.</p>
-<button class="continue-btn">Continue</button>
-</div>
-
     <div class="question" data-question="1" style="display:none;">
       <h2>Question 1: Who are you shopping for?</h2>
       <div class="answer-container">
@@ -435,6 +428,12 @@ font-size: 18px;
 <button class="answer" data-outcomes="The Homebody">Making their space cozy & comfortable</button>
       </div>
     </div>
+
+<div class="opt-in-form" style="display:none;">
+<h3>Want to be the first to hear about <strong><em>limited quantity products</em></strong> , <strong><em>new arrivals</em></strong> , and our <strong><em>best promotions</em></strong> ?</h3>
+<p>Join our email list and receive exclusive discounts and gift ideas for your loved ones.</p>
+<button class="continue-btn">Continue</button>
+</div>
 <div class="results" style="display:none;">
 <h2>These are sure to be crowd pleasures:</h2>
 <p class="outcome"></p>
@@ -446,8 +445,8 @@ font-size: 18px;
   </div>
   <script>
     const startBtn = document.querySelector(".start-btn");
-const optInForm = document.querySelector(".opt-in-form");
 const questions = document.querySelectorAll(".question");
+const optInForm = document.querySelector(".opt-in-form");
 const continueBtn = document.querySelector(".continue-btn");
 const results = document.querySelector(".results");
 const outcomeEl = document.querySelector(".outcome");
@@ -671,3 +670,6 @@ showResults();
  </script>
 </body>
 </html>
+
+
+
